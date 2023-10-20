@@ -59,6 +59,7 @@ section {
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0 0 0;
+    width: 95%;
 }
 
 header h5{
@@ -168,7 +169,16 @@ main {
     }
 }
 
-@media (max-width: 650px) and (min-width:450px) {
+@media (max-width: 650px) and (min-width:500px) {
+    body{
+        justify-content: flex-start;
+    }   
+
+    section{
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
 
     .notifications {
         width: 88%;
@@ -179,8 +189,14 @@ main {
     }
 }
 
-@media (max-width:450px) {
-    body {
-        display: none!important;
+@media (max-width:500px) {
+    body{
+        justify-content: flex-start;
+    }
+    
+    section{
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
     }
 }

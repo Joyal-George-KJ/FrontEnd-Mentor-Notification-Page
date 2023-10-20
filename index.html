@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <section>
+        <div class="wrapper">
+            <header>
+                <h2>Notifications <span class="unread-count">3</span></h2>
+                <h5 onclick="readAll()">Mark all as read</h5>
+            </header>
+            <main>
+                <div class="notifications color-unread" onclick="readThis(0)">
+                    <div class="front">
+                        <div class="image">
+                            <img src="assets/images/avatar-mark-webber.webp" alt="">
+                        </div>
+                        <div class="context">
+                            <div class="message">
+                                <span>Mark Webber</span> reacted to your recent post <span>My first tournament today!</span>
+                            </div>
+                            <div class="time">1m ago</div> 
+                        </div>
+                        <span class="unread-mark" id="unread"></span>
+                    </div>
+                    
+                </div>
+                
+                <div class="notifications color-unread" onclick="readThis(1)">
+                    <div class="front">
+                        <div class="image">
+                            <img src="assets/images/avatar-angela-gray.webp" alt="">
+                        </div>
+                        <div class="context">
+                            <div class="message">
+                                <span>Angela Gray</span> followed you.
+                            </div>
+                            <div class="time">5m ago</div> 
+                        </div>
+                        <span class="unread-mark" id="unread"></span>
+                    </div>
+                    
+                </div>
+                 
+                <div class="notifications color-unread" onclick="readThis(2)">
+                    <div class="front">
+                        <div class="image">
+                            <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+                        </div>
+                        <div class="context">
+                            <div class="message">
+                                <span>Jacob Thompson</span> has joined your group <span>Chess Club.</span>
+                            </div>
+                            <div class="time">1 day ago</div> 
+                        </div>
+                        <span class="unread-mark" id="unread"></span>
+                    </div>
+                    
+                </div>
+                 
+                <div class="notifications color-unread" onclick="readThis(3)">
+                    <div class="front">
+                        <div class="image">
+                            <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+                        </div>
+                        <div class="context">
+                            <div class="message">
+                                <span>A Rizky Hasanuddin</span> sent you a private message.
+                            </div>
+                            <div class="time">5 day ago</div> 
+                        </div>
+                        <span class="unread-mark" id="unread"></span>
+                    </div>
+                    
+                </div>
+                 
+                <div class="notifications color-unread" onclick="readThis(4)">
+                    <div class="front">
+                        <div class="image">
+                            <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+                        </div>
+                        <div class="context">
+                            <div class="message">
+                                <span>Kimberly Smith</span> commented on your picture.
+                            </div>
+                            <div class="time">1 week ago</div> 
+                        </div>
+                        <span class="unread-mark" id="unread"></span>
+                    </div>
+                    
+                </div>
+
+                <div class="notifications color-unread" onclick="readThis(5)">
+                    <div class="front">
+                        <div class="image">
+                            <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+                        </div>
+                        <div class="context">
+                            <div class="message">
+                                <span>Nathan Peterson</span> reacted to your recent post <span>5 end-game strategies to increase your win rate.</span>
+                            </div>
+                            <div class="time">2 week ago</div> 
+                        </div>
+                        <span class="unread-mark" id="unread"></span>
+                    </div>
+                    
+                </div>
+
+                <div class="notifications color-unread" onclick="readThis(6)">
+                    <div class="front">
+                        <div class="image">
+                            <img src="assets/images/avatar-anna-kim.webp" alt="">
+                        </div>
+                        <div class="context">
+                            <div class="message">
+                                <span>Anna Kim</span> left the group <span>Chess Club.</span>
+                            </div>
+                            <div class="time">2 week ago</div>
+                        </div>
+                        <span class="unread-mark" id="unread"></span>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://www.frontendmentor.io/profile/Joyal-George-KJ">Joyal George K J</a>.
+          </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

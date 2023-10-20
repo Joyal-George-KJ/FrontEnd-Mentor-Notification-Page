@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans';
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+}
+
+body {
+    background-color: var(--Light-grayish-blue-2);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+section {
+    margin: 3rem 0;
+    width: 65%;
+    border-radius: 1rem;
+    color: var(--Very-dark-blue);
+    background-color: var(--White) ;
+    box-shadow: 0 0 2px var(--Dark-grayish-blue);
+}
+
+.unread-count{
+    padding: 0.2rem 0.5rem;
+    color: var(--White);
+    background-color: var(--Blue);
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.wrapper header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+
+header h5{
+    cursor: pointer;
+    color: var(--Dark-grayish-blue);
+}
+
+main {
+    width: 100%;
+}
+
+.color-unread {
+    background-color: var(--Light-grayish-blue-1)!important;
+}
+
+.notifications {
+    width: 97%;
+    display: flex;
+    border-radius: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    margin: 1rem 0;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.front {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.context {
+    margin: 0 1rem;
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image img {
+    width: 4rem;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.message span {
+    font-weight: bold;
+    margin: 0 0.1rem;
+}
+
+.liked-pic {
+    position: relative;
+    width: 3rem;
+    top: 1rem;
+}
+
+
+/* .time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} */
+
+.unread-mark {
+    width: 0;
+    border: 5px solid var(--Red);
+    border-radius: 1rem;
+}
+
+.expand {
+    background-color: var(--White);
+    box-shadow: 0 0 1px grey;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: relative;
+    left: 5rem;
+    top: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 950px) and (min-width:650px) {
+    
+    .notifications {
+        width: 94%;
+    }
+
+    .expand {
+        width: 72%;
+    }
+}
+
+@media (max-width: 650px) and (min-width:450px) {
+
+    .notifications {
+        width: 88%;
+    }
+
+    .expand {
+        width: 56%;
+    }
+}
+
+@media (max-width:450px) {
+    body {
+        display: none!important;
+    }
+}
